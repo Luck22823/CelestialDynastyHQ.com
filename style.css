@@ -22,7 +22,6 @@ body{
     text-decoration: none;
     font-size: 50px;
     color: transparent; /* Make text transparent initially */
-    background-color: ;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Initial glow color and intensity */
     animation: glowAnimation 3s ease-in-out infinite alternate; /* Define the animation */
 }
@@ -76,6 +75,34 @@ body{
     font-size: 20px;
     color: white; /* Set the text color */
     text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
+    margin-bottom: 300px;
+}
+
+.activities{
+    text-align: center;
+}
+
+.activities-start{
+    font-size: 50px;
+    text-decoration: overline underline;
+    color: white; /* Set the text color */
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
+}
+
+.activities-middle{
+    font-size: 30px;
+}
+
+.chat-img{
+    animation: glowing 1.5s infinite alternate;
+}
+
+.vc-img{
+    animation: glowing 1.5s infinite alternate;
+}
+
+.gamebot-img{
+    animation: glowing 1.5s infinite alternate;
 }
 
   .circle {
@@ -131,6 +158,15 @@ body{
     }
     100% {
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Back to initial glow color and intensity */
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px #fff; /* Change #fff to the color you want the glow to be */
+    }
+    100% {
+        box-shadow: 0 0 20px #00ff00; /* Change #00ff00 to the color you want the glow to transition to */
     }
 }
   
